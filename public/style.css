@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+    height: 1000px;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(12, 129, 28);
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    position: absolute;
+    width: 1200px;
+    display: felx;
+    justify-content: center;
+}
+
+.search-form {
+    position: relative;
+    padding: 10px;
+    margin: 150px;
+    max-width: 960px;
+    height: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.search-form ul {
+    position: absolute;
+    padding: 10px;
+    color: blue;
+}
