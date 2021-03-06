@@ -1,7 +1,6 @@
 
 async function windowAction() {
-    const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
-    const request = await fetch(endpoint);
+    const request = await fetch('/api');
     const arrayName = request.json()
     console.table(arrayName)
 
@@ -45,6 +44,6 @@ async function windowAction() {
       event.preventDefault()
       displayMatches(event)
    })
-    searchInput.addEventListener('change', displayMatches);
+    userInputs.addEventListener('change', displayMatches);
   }
   window.onload = windowAction;
