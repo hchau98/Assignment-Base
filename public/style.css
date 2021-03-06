@@ -39,7 +39,7 @@ h1 {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding-bottom: 10px;
     text-transform: capitalize;
     list-style-position: inside;
@@ -47,6 +47,7 @@ h1 {
   
   }
   .suggestions{
+    width: 756px;
     margin:40;
     position:relative;
   }
