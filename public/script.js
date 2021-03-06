@@ -36,7 +36,7 @@ async function windowAction() {
       suggestions.innerHTML = html.toUpperCase();
     }
   
-    const userInputs = document.querySelector('.search');
+    const userInputs = document.querySelector('.input');
     const suggestions = document.querySelector('.suggestions');
   
   
