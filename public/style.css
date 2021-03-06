@@ -31,17 +31,23 @@ h1 {
     color: blue;
 }
 
-.suggestions {
-    margin: 40px;
-
-}
-
-/* .suggestions li .name{
-    display: flex;
-    justify-content: center; */
-}
-
-.ul {
-    list-style: circle;
-    color: rgb(226, 43, 43);
-}
+.suggestions li{
+    background:white;
+    list-style-type:none;
+    border: 1px solid rgb(133, 133, 133);
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    list-style-position: inside;
+    background-image:linear-gradient(to top,#c9ff06,#01c211,#8cf083 );
+  
+  }
+  .suggestions{
+    margin:40;
+    padding:0;
+    position:relative;
+  }
