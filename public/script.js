@@ -1,7 +1,7 @@
 
 async function windowAction() {
-    const request = await fetch('/api');
-    const arrayName = request.json()
+    const request = await fetch('/api',{ method: 'post' });
+    const arrayName = await request.json()
     console.table(arrayName)
 
   
@@ -44,6 +44,6 @@ async function windowAction() {
       event.preventDefault()
       displayMatches(event)
    })
-    userInputs.addEventListener('change', displayMatches);
+    
   }
   window.onload = windowAction;
