@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color:#fffbeb;;
     height: 1000px;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,19 +10,13 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-}
-
-form {
-    position: absolute;
-    width: 1200px;
-    display: felx;
-    justify-content: center;
+    font-size: 30px;
 }
 
 .search-form {
     position: relative;
     padding: 10px;
-    margin: 150px;
+    margin: 60px;
     max-width: 960px;
     height: 1000;
     display: flex;
@@ -35,4 +29,19 @@ form {
     position: absolute;
     padding: 10px;
     color: blue;
+}
+
+.suggestions {
+    margin: 40px;
+
+}
+
+/* .suggestions li .name{
+    display: flex;
+    justify-content: center; */
+}
+
+.ul {
+    list-style: circle;
+    color: rgb(226, 43, 43);
 }
