@@ -1,4 +1,5 @@
 async function windowAction() {
+    
     const request = await fetch('/api');
     const arrayName = request.json();
 
@@ -11,6 +12,7 @@ async function windowAction() {
     }
   
     function displayMatches(event) {
+
       const matchArray = findMatches(event.target.value, arrayName);
       const html = matchArray.map(place => {
           const regex = new RegExp(event.target.value, 'gi');
@@ -37,7 +39,7 @@ async function windowAction() {
     const suggestions = document.querySelector('.suggestions');
   
   
-    searchInput.addEventListener('keyup',  (event) => { displayMatches(event) });
+    searchInput.addEventListener('keyup',  (evt) => { displayMatches(evt) });
     searchInput.addEventListener('change', displayMatches);
   }
   window.onload = windowAction;
